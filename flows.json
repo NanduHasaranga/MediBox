@@ -1,0 +1,716 @@
+[
+    {
+        "id": "3dfe1c5f778cca85",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a4afbacb2c6e1785",
+        "type": "mqtt in",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "topic": "MEDIBOX-NANDU-TEMP",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dc6c8a0156d21197",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "09d1c2bf7b84a377",
+                "427682c9bf48a678"
+            ]
+        ]
+    },
+    {
+        "id": "09d1c2bf7b84a377",
+        "type": "ui_gauge",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "group": "42251cf8ceabfeae",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Realtime",
+        "label": "Celsius",
+        "format": "{{payload}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "427682c9bf48a678",
+        "type": "ui_chart",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "group": "42251cf8ceabfeae",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 350,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46d5dcbe573ea351",
+        "type": "mqtt in",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "topic": "MEDIBOX-NANDU-MAXLDR",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dc6c8a0156d21197",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "bdd4571fc53760ba",
+                "3b06ebcfa8f74690"
+            ]
+        ]
+    },
+    {
+        "id": "3420f1f093aa32b8",
+        "type": "mqtt in",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "topic": "MEDIBOX-NANDU-MAXSIDE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dc6c8a0156d21197",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "d9bdae61be00535b"
+            ]
+        ]
+    },
+    {
+        "id": "bdd4571fc53760ba",
+        "type": "ui_gauge",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "group": "d749123dd05a56d9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Realtime",
+        "label": "",
+        "format": "{{payload}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3b06ebcfa8f74690",
+        "type": "ui_chart",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "group": "d749123dd05a56d9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 350,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cdcdd275a4f2554e",
+        "type": "ui_text",
+        "z": "3dfe1c5f778cca85",
+        "group": "d749123dd05a56d9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Source : ",
+        "format": "{{payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 480,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d9bdae61be00535b",
+        "type": "function",
+        "z": "3dfe1c5f778cca85",
+        "name": "LDR",
+        "func": "let ldr = msg.payload;\nif(ldr == 0){\n    return{\n        payload : \"LEFT LDR\"\n    }\n}else{\n    return{\n        payload: \"RIGHT LDR\"\n    }\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "cdcdd275a4f2554e"
+            ]
+        ]
+    },
+    {
+        "id": "a9a46e078cc85b74",
+        "type": "ui_slider",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "label": "Minimum Angle",
+        "tooltip": "",
+        "group": "8a086809456039c5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "6fecc99798213b7b",
+                "9e65eead59d772cc",
+                "b453b89eaefb8839"
+            ]
+        ]
+    },
+    {
+        "id": "6fecc99798213b7b",
+        "type": "ui_text",
+        "z": "3dfe1c5f778cca85",
+        "group": "8a086809456039c5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b1f99df05f576514",
+        "type": "mqtt out",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "topic": "MEDIBOX-NANDU-MINANGLE",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dc6c8a0156d21197",
+        "x": 830,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9e65eead59d772cc",
+        "type": "ui_button",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "group": "8a086809456039c5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Set",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "minAngle",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "b1f99df05f576514"
+            ]
+        ]
+    },
+    {
+        "id": "b453b89eaefb8839",
+        "type": "change",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "minAngle",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2edafa76729c339f",
+        "type": "ui_slider",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "label": "Controlling Factor",
+        "tooltip": "",
+        "group": "8a086809456039c5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1",
+        "step": "0.01",
+        "className": "",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "61274e5356dd5520",
+                "f0ec382cc36c4470",
+                "048b8d8ce23cfb73"
+            ]
+        ]
+    },
+    {
+        "id": "61274e5356dd5520",
+        "type": "ui_text",
+        "z": "3dfe1c5f778cca85",
+        "group": "8a086809456039c5",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 610,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "dd34fdeb408038fc",
+        "type": "mqtt out",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "topic": "MEDIBOX-NANDU-CONTFACTOR",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dc6c8a0156d21197",
+        "x": 840,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f0ec382cc36c4470",
+        "type": "ui_button",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "group": "8a086809456039c5",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Set",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "conFac",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 610,
+        "y": 500,
+        "wires": [
+            [
+                "dd34fdeb408038fc"
+            ]
+        ]
+    },
+    {
+        "id": "048b8d8ce23cfb73",
+        "type": "change",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "conFac",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1c4b4f1ec7805f5",
+        "type": "ui_dropdown",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "label": "Medicine Type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "8a086809456039c5",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "Tablet A",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Tablet B",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Tablet C",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Custom",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 80,
+        "y": 380,
+        "wires": [
+            [
+                "ae668c20f5247b3e",
+                "dfbc298b78472bc2",
+                "73265c41dfa27e09"
+            ]
+        ]
+    },
+    {
+        "id": "73265c41dfa27e09",
+        "type": "function",
+        "z": "3dfe1c5f778cca85",
+        "name": "minimum angle",
+        "func": "let type = msg.payload;\nlet minAngle;\nlet conFactor;\nif(type == \"Tablet A\"){\n    minAngle = 0    \n}\nelse if (type == \"Tablet B\") {\n    minAngle = 45;\n}\nelse if (type == \"Tablet C\") {\n    minAngle = 90;\n}\n\nreturn {\n    payload : minAngle\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "a9a46e078cc85b74"
+            ]
+        ]
+    },
+    {
+        "id": "0ff5f8a6724d52cf",
+        "type": "debug",
+        "z": "3dfe1c5f778cca85",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "dfbc298b78472bc2",
+        "type": "function",
+        "z": "3dfe1c5f778cca85",
+        "name": "controlling factor",
+        "func": "let type = msg.payload;\nlet conFactor;\nif (type == \"Tablet A\") {\n    conFactor = 0.25\n}\nelse if (type == \"Tablet B\") {\n    conFactor = 0.5;\n}\nelse if (type == \"Tablet C\") {\n    conFactor = 0.75;\n}\nreturn{\n    payload : conFactor\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "2edafa76729c339f"
+            ]
+        ]
+    },
+    {
+        "id": "ae668c20f5247b3e",
+        "type": "change",
+        "z": "3dfe1c5f778cca85",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "MedType",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c463d92a38d1027",
+        "type": "ui_spacer",
+        "z": "3dfe1c5f778cca85",
+        "name": "spacer",
+        "group": "42251cf8ceabfeae",
+        "order": 2,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "dc6c8a0156d21197",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "https://test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "42251cf8ceabfeae",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "0277ef881bf7f21e",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d749123dd05a56d9",
+        "type": "ui_group",
+        "name": "Maximum Light Intensity",
+        "tab": "0277ef881bf7f21e",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8a086809456039c5",
+        "type": "ui_group",
+        "name": "Shade Controller",
+        "tab": "0277ef881bf7f21e",
+        "order": 3,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0277ef881bf7f21e",
+        "type": "ui_tab",
+        "name": "MediBox",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
