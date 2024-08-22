@@ -1,6 +1,10 @@
-# Medibox
+# 🩺 Medibox
+
+## Overview
 
 Medibox is a smart medication reminder system built using an ESP32 microcontroller. It helps users manage their medication schedule by setting alarms, monitoring environmental conditions, and displaying relevant information on an OLED screen.
+
+![image](https://github.com/user-attachments/assets/0beca7b4-e5d2-4ddf-bfd8-0927920ab400)
 
 ## Features
 
@@ -10,8 +14,6 @@ Medibox is a smart medication reminder system built using an ESP32 microcontroll
 - **Temperature and Humidity Monitoring**: Continuously monitors the environment and alerts users if the conditions are outside the desired range.
 - **Buzzer and LED Alerts**: Audible and visual notifications to ensure alarms and warnings are noticed.
 - **User-Friendly Menu Navigation**: Easy-to-use buttons allow for navigating the menu, setting alarms, and configuring time zones.
-
-![image](https://github.com/user-attachments/assets/0beca7b4-e5d2-4ddf-bfd8-0927920ab400)
 
 ## Getting Started
 
@@ -25,9 +27,6 @@ Medibox is a smart medication reminder system built using an ESP32 microcontroll
 3. **Wi-Fi Configuration**:
    - Ensure the device is connected to a Wi-Fi network for time synchronization.
 
-
-
-
 ## Usage
 
 1. **Set Time Zone**:
@@ -40,11 +39,13 @@ Medibox is a smart medication reminder system built using an ESP32 microcontroll
    - The Medibox will automatically monitor the temperature and humidity, providing alerts if conditions are not ideal.
   
 
-# 🩺 Advanced Medibox Project
+# 🩺 Advanced Medibox
 
 ## Overview
 
-The Advanced Medibox project is designed to enhance the functionality of a medication management device. This version of Medibox integrates light intensity monitoring, dynamic light adjustment, and user-configurable settings to ensure optimal storage conditions for sensitive medicines. 
+The Advanced Medibox is designed to enhance the functionality of a medication management device. This version of Medibox integrates light intensity monitoring, dynamic light adjustment, and user-configurable settings to ensure optimal storage conditions for sensitive medicines. 
+
+![image](https://github.com/user-attachments/assets/d4078d7e-d11d-4a90-ba86-74124dc784ba)
 
 ## Features
 
