@@ -4,8 +4,6 @@
 
 Medibox is a smart medication reminder system built using an ESP32 microcontroller. It helps users manage their medication schedule by setting alarms, monitoring environmental conditions, and displaying relevant information on an OLED screen.
 
-![image](https://github.com/user-attachments/assets/0beca7b4-e5d2-4ddf-bfd8-0927920ab400)
-
 ## Features
 
 - **Alarm System**: Set up to three customizable alarms to remind users to take their medication.
@@ -14,6 +12,8 @@ Medibox is a smart medication reminder system built using an ESP32 microcontroll
 - **Temperature and Humidity Monitoring**: Continuously monitors the environment and alerts users if the conditions are outside the desired range.
 - **Buzzer and LED Alerts**: Audible and visual notifications to ensure alarms and warnings are noticed.
 - **User-Friendly Menu Navigation**: Easy-to-use buttons allow for navigating the menu, setting alarms, and configuring time zones.
+
+![image](https://github.com/user-attachments/assets/0beca7b4-e5d2-4ddf-bfd8-0927920ab400)
 
 ## Getting Started
 
@@ -38,14 +38,13 @@ Medibox is a smart medication reminder system built using an ESP32 microcontroll
 3. **Environmental Monitoring**:
    - The Medibox will automatically monitor the temperature and humidity, providing alerts if conditions are not ideal.
   
+---
 
 # 🩺 Advanced Medibox
 
 ## Overview
 
 The Advanced Medibox is designed to enhance the functionality of a medication management device. This version of Medibox integrates light intensity monitoring, dynamic light adjustment, and user-configurable settings to ensure optimal storage conditions for sensitive medicines. 
-
-![image](https://github.com/user-attachments/assets/d4078d7e-d11d-4a90-ba86-74124dc784ba)
 
 ## Features
 
@@ -75,6 +74,8 @@ The Advanced Medibox is designed to enhance the functionality of a medication ma
     - **Controlling Factor Slider**: Ranges from 0 to 1.
   - Dropdown menu with options for commonly used medicines (e.g., Tablet A, B, C) and a custom option.
   - Custom option allows manual adjustment of minimum angle and controlling factor.
+
+ ![image](https://github.com/user-attachments/assets/d4078d7e-d11d-4a90-ba86-74124dc784ba)
 
 ## Tech Stack
 
