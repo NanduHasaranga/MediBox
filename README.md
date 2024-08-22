@@ -1,4 +1,6 @@
+
 # 🩺 Medibox
+
 
 ## Overview
 
@@ -37,10 +39,13 @@ Medibox is a smart medication reminder system built using an ESP32 microcontroll
 
 3. **Environmental Monitoring**:
    - The Medibox will automatically monitor the temperature and humidity, providing alerts if conditions are not ideal.
+
   
 ---
 
+
 # 🩺 Advanced Medibox
+
 
 ## Overview
 
