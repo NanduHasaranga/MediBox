@@ -93,7 +93,7 @@ The Advanced Medibox is designed to enhance the functionality of a medication ma
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/advanced-medibox.git
+   git clone https://github.com/NanduHasaranga/MediBox.git
    cd advanced-medibox
    
 2. **Setup Node-RED**:
@@ -127,12 +127,4 @@ The Advanced Medibox is designed to enhance the functionality of a medication ma
 - Integration of additional sensors for temperature and humidity.
 - Advanced data analytics for better medication management.
 - Enhanced user interface with more customization options.
-
-## Contributing
-
-Feel free to open issues or submit pull requests if you'd like to contribute to this project.
-
-## License
-
-This project is licensed under the MIT License.
 
